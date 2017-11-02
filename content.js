@@ -7,7 +7,6 @@ $(function(){
     var mailaddress = $(this).attr('href').substring(7);
 
     var textArea = document.createElement("textarea");
-//	  textArea.style.display = 'none';
 	  textArea.value = mailaddress;
     document.body.appendChild(textArea);
 
@@ -19,8 +18,6 @@ $(function(){
 	  } catch (err) {
 	    console.log('Oops, unable to copy');
 	  }
-
-//	  document.body.removeChild(textArea);
 	});
 
 });
